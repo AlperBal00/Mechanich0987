@@ -1,0 +1,362 @@
+<html>
+<head>
+<script src="http://www.webkodu.com/kod-kaynak/wk-kalp-efekt.js"></script>
+<title></title>
+<style>
+.arkaplan
+{background-image:url('arkaplan.jpg');
+background-position:center;
+backgrou7nd-repeat:no-repeat;
+background-size:cover;
+height:100%; background-attachment:fixed;}
+
+.logo
+{position:absolute;
+top:25px; left:25px;
+background-color:#551414;
+transition:1s;
+border-style:solid double solid double;
+border-top-color:white;
+border-right-color:white;
+border-bottom-color:white;
+border-left-color:white;
+position:fixed;
+width:200px; height:150px;}
+
+.logo:hover
+{cursor:pointer; 
+background-color:#ef380d;
+transition:1s;
+border-top-color:white;
+border-right-color:white;
+border-bottom-color:white;
+border-left-color:white;
+}
+.anasayfa
+{background-color:#551414;
+position:absolute;
+top:210px; left:25px; 
+font-size:40px; color:white; width:200px; height:50px;
+border-style:outset double solid double; transition:1s;
+position:fixed;}
+
+.anasayfa:hover{cursor:pointer; background-color:#ef380d; 
+transition:1s; width:200px; height:50px; color:#a59eee;}
+
+.kanalım{
+background-color:#551414;
+position:absolute;
+top:270px; left:25px; 
+font-size:35px; color:white; width:200px; height:80px;
+border-style:outset double solid double; transition:1s;
+position:fixed;
+word-wrap:break-word;
+}
+.kanalım:hover{cursor:pointer; background-color:#ef380d; 
+transition:1s; width:200px; height:80px; color:#a59eee;}
+
+.resim{width:220px; height:160px;}
+
+.silahlar{background-color:#551414;
+position:absolute;
+top:355px; left:25px; 
+font-size:55px; color:white; width:200px; height:75px;
+border-style:outset double solid double; transition:1s;
+position:fixed;
+word-wrap:break-word;}
+
+.silahlar:hover
+{cursor:pointer; background-color:#ef380d; 
+transition:1s; width:200px; height:75px; color:#a59eee;}
+
+.gameplays{background-color:#551414;
+position:absolute;
+top:440px; left:25px; 
+font-size:40px; color:white; width:200px; height:50px;
+border-style:outset double solid double; transition:1s;
+position:fixed;
+word-wrap:break-word;}
+
+.gameplays:hover
+{cursor:pointer; background-color:#ef380d; 
+transition:1s; width:200px; height:50px; color:#a59eee;}
+
+.anaekran
+{width:900px; height:620px;
+position:absolute;
+right:150px; top:50px;;
+background-color:#551414;
+border-color:#cc0d0d;
+border:20px;
+padding:5px 5px 5px 5px 5px;
+border-style:groove inset inset groove;}
+
+.kayıt{background-color:#551414;
+position:absolute;
+top:600px; left:25px; 
+font-size:25px; color:white; width:200px; height:60px;
+border-style:outset double solid double; transition:1s;
+position:fixed;
+word-wrap:break-word; color:white;}
+
+.kayıt:hover{cursor:pointer; background-color:#ef380d; 
+transition:3s; width:200px; height:60px; color:#a59eee;
+transform:rotate(360deg);}
+
+.res{text-decoration:none; color:white;}
+.res:hover{color:white;}
+
+.add{position:absolute;
+left:20px; top:25px;}
+.soyy{position:absolute;
+left:0px; top:50px; }
+.nickname{position:absolute;
+left:0px; top:120px;}
+.okk{position:absolute;
+left:450px; top:100px;
+width:400px; height:400px;}
+.sifree{position:absolute;
+left:0px; top:100px;}
+
+.sinif{position:absolute;
+left:0px; top:250px;}
+.temizle{position:absolute;
+left:0px; top:400px;}
+.resett{position:absolute;
+left:150px; top:400px;}
+.silahh{text-decoration:none; color:white;}
+.silahh:hover{  color:#a59eee}
+
+
+.silah1{position:absolute;
+left:0px; top:250px;
+width:100px; height:100px;}
+
+.siniflar
+{position:absolute;
+left:100px; top:100px; transition:1s;}
+.siniflar:hover
+{position:absolute;
+left:100px; top:100px;
+background-color:#7d101f; transition:1s;}
+
+.sinifyazi
+{
+position:absolute;
+left:240px; top:18px;
+color:white;
+font-size:60px;
+transition:1s;
+border-color:white;}
+
+.sinifyazi:hover
+{background-color:white;
+position:absolute;
+left:240px; top:320px;
+color:#551414;
+font-size:60px;
+transition:1s;}
+
+
+
+
+.arayuz
+{position:absolute;
+left:80px; top:600px; transition:1s;}
+.arayuz:hover
+{background-color:#7d101f;
+position:absolute;
+left:80px; top:600px;
+transition:1s;}
+
+.arayuzyazi
+{position:absolute;
+left:120px; top:530px;
+color:white;
+font-size:60px;
+transition:1s;
+border-color:white;}
+
+.arayuzyazi:hover
+{background-color:white;
+position:absolute;
+left:120px; top:1000px;
+color:#551414;
+font-size:60px;
+transition:1s;}
+
+.sac
+{position:absolute;
+left:160px; top:1300px;
+transition:1s;}
+.sac:hover
+{position:absolute;
+left:160px; top:1300px;
+background-color:#7d101f;
+transition:1s;}
+
+.sacyazi
+{position:absolute;
+left:295px; top:1220px;
+color:white;
+font-size:60px;
+transition:1s;
+border-color:white;}
+
+.sacyazi:hover
+{position:absolute;
+left:295px; top:1550px;
+color:#551414;
+font-size:60px;
+transition:1s;
+background-color:white;}
+
+.ad
+{position:absolute;
+left:50px; top:1700px; transition:6s;}
+.ab
+{position:absolute;
+left:800px; top:1700px; transition:6s;}
+.ad:hover
+{position:absolute;
+left:50px; top:10px;
+transition:3s;}
+.ab:hover
+{position:absolute;
+left:800px; top:10px;
+transition:3s;}
+
+.Kanall{text-decoration:none; color:white;}
+.Kanall:hover{  color:#a59eee}
+
+.anasayfa{text-decoration:none; color:white;}
+.anasayfa:hover{  color:#a59eee}
+
+.gameplay
+{text-decoration:none; color:white;}
+.anasayfa:hover{  color:#a59eee}
+.askerr{text-decoration:none; color:white;}
+.topcuu{text-decoration:none; color:white;}
+ .dusuk{text-decoration:none; color:white;}
+</style>
+</head>
+<body class="arkaplan">
+ <div class="logo"><a href="asd.html"><img class="resim" src="renegadeline.png"></a></div>
+ <div class="anasayfa" align=center><a class="anasayfa" href="asd.html">Anasayfa</a></div>
+ <div class="kanalım"align=center><a class="Kanall" href="https://www.youtube.com/channel/UCngdrp9Gz5x9XLA19dsHJwg" target="_blank">YouTube Kanalım</div>
+ <div class="silahlar" align=center><a class="silahh" href="silahlar.html">Silahlar!</a></div>
+ <div class="gameplays" align=center><a class="gameplay" href="gameplay.html">Gameplays</a></div>
+ <div class="kayıt" align=center><a class="res" href="uyeol.html">Hala Kayıtlı Değil misin?</a></div>
+ 
+ <div class="anaekran">
+ 
+     <html>
+<head>
+<title></title>
+<style>
+#menum{
+position:fixed;
+position:absolute;
+top:-5px;
+left:30px;
+z-index:5;}
+body{height:120%;}
+#menum ul li
+{
+text-decoration:none;
+display:block;
+float:left ;
+width:220px;
+height:50px;
+padding: 2px 5px ;
+<!--background:url(Resimler/2.jpg)no-repeat left top;
+border-bottom:5px solid  #7a1212;
+border-top:5px solid  #7a1212;
+border-left:10px solid  #7a1212;
+border-right:10px solid #7a1212;-->
+border: 10px solid #7a1212;
+cellpadding:50px;
+}
+
+#menum li ul
+{display:none;}
+
+#menum ul li 
+{ background-color:#961515;
+transition:1s;}
+ #menum ul li:hover{background-color:#ff1616; transition:1s;}
+#menum ul li a
+{color:white;
+text-decoration:none;}
+
+#menum li:hover ul
+{display:block;}
+
+.pngliresim{position:absolute; left:536px; top:120px; z-index:2; transition:1s;}
+
+.türr{color:white;
+ position:absolute;
+ left:0px;
+ bottom:90px;
+ font-size:50px;
+  transition:1s;
+   background-color:#380c0c;}
+ .türr:hover
+ {color:white;
+ position:absolute;
+ left:0px;
+ bottom:90px;
+ font-size:50px;
+ background-color:#7d101f;
+  transition:1s;}
+  .yayinlanmayan{text-decoration:none; color:white;}
+  
+  .oyunnvideo1
+{position:absolute;
+left:20px;
+bottom:150px;}
+</style>
+</head>
+<body>
+<div id="menum">
+<ul>
+<li align=center style="font-size:38px; line-height:50px;"><a  class="dusuk" href="dusuk.html">Düşük Level</a></li>
+<li align=center style="font-size:38px; line-height:50px; color:white; cursor:pointer;">Sınıflara Göre
+<ul style="position:absolute ; left:250px ;
+ top:80px; width:100px;">
+<li align=center style="font-size:38px; line-height:50px;" ><a class="topcuu" href="topcu.html">Topçu</a></li>
+<li align=center style="font-size:38px; line-height:50px;"><a class="askerr" href="askerr.html">Asker</a></li>
+<li align=center style="font-size:38px; line-height:50px;"><a class="komandoo" href="komandoo.html">Komando</a></li>
+</ul>
+<li align=center style="font-size:35px; line-height:50px;"><a class="yayinlanmayan" href="yayinlanmayan.html">Yayınlanmayan</a></li>
+</ul>
+</div>
+<div class="pngliresim">
+<img src="afs.png"> 
+</div>
+<div class="oyunnvideo1">
+<embed src="oyunvideo1.mp4" width="500" height="300" autostart="false" loop="false">
+</div>
+
+
+</body>
+</html>
+ </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
